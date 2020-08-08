@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hello!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="{% static 'js/vanta.birds.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+    <script src="{% static 'js/typing.js' %}"></script>
+
+
+</head>
+<body>
+ 
+    <div id = "vanta-container">
+
+            <div class="navbar home">
+              <div class="nav container" role="navigation">
+                    <a href="{% url 'Main:about' %}" class="nav-button home nav-arrow">
+                      <img id="next" src="{% static "img/arrow.png" %}" alt="Arrow by Rainbow Designs from the Noun Project">
+                    </a>
+              </div>
+            </div>
+
+        <div class = "my-name">
+            <span class = "inner-name">Eric Xu </span> 
+            <br>
+            <div class = "description"> I love 
+                <span
+                   class="txt-rotate"
+                   data-period="1000"
+                   data-rotate='["developing software", "Machine learning", "playing tennis",]'>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+      VANTA.BIRDS({
+        el: "#vanta-container",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x42c4c,
+        color1: 0xff25,
+        birdSize: 1.70,
+        wingSpan: 26.00,
+        separation: 100.00,
+        alignment: 35.00,
+        cohesion: 4.00,
+        quantity: 2.00
+      })
+      </script>
+    
+   
+   
+
+</body>
+</html>
+

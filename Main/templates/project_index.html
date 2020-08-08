@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Yantramanav" rel="stylesheet">
+    <!-- CSS stylesheet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+  </head>
+  <body>
+    <div class="wrapper">
+         <!-- NAVBAR -->
+         <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div id="navbar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="{% url 'cover' %}">Eric Xu</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="{% url 'Main:about' %}">About</a></li>
+                  <li><a href="{% url 'Main:project_index' %}">Projects</a></li>
+                  <li><a href="{% url 'Main:work' %}">Work</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class = "pink-separator"> 
+        </div>
+        
+
+   
+      <!-- CONTENT -->
+      <div class="container">
+          <div class="flex-container">
+
+            {% for project in projects %}
+            <div class="flex-item">
+              <a href="{{ project.link }}">
+                
+                <div class="flex-img">
+                  <img class='project-img' src="{{ project.image.url }}" alt=""></img>
+                </div>
+
+                <div class="flex-title">
+                  <span class = "project-title"> {{ project.title }}</span>
+                  <br>
+                  <span class= "project-meta"> {{ project.description }}</span>
+                  <br>
+                  <span class= "project-meta"> Technologies used: {{ project.technology }}</span>
+                </div>
+              </a>
+            </div>
+    {% endfor %}
+
+          </div>
+      </div>
+
+      <!-- FOOTER -->
+    
+        <div class="container-footer">
+          <div class="footer">
+            <hr class="footer-hr">
+            Made with ☕ and 🥑 by Eric Xu 
+
+          </div>
+        </div>
+      
+
+    </div> <!-- end of wrapper class-->
+  </body>
+</html>
