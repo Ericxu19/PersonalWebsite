@@ -15,7 +15,7 @@ html, body{
   text-decoration: none;  
 }
 .container-fluid{
-  background-color:  #d4fcfa4d;
+  background-color:  #ecfff7;
   padding-top: 10px; 
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +35,7 @@ html, body{
 .navbar {
   margin-bottom: 0;
   border: 0;
-  background-color:  #d4fcfa4d !important;
+  background-color:  #ecfff7 !important;
 }
 #navbar .navbar-nav li a, #navbar .navbar-header a{
   font-size: 18px;
@@ -235,7 +235,7 @@ html, body{
   display: block;
   position: relative;
   padding-bottom: 0px;
-  background-color: #d4fcfa4d !important;
+  background-color: #ecfff7 !important;
 
 }
 /**End Home**/
@@ -263,12 +263,12 @@ html, body{
   margin-top: 35px;
   margin-bottom: 15px;
   border-width: 0;
-  border-top: 3px solid #d4fcfa4d;
+  border-top: 3px solid #ecfff7;
   width: 100%;
   text-align: center;
 }
 
-@media (max-width: 1080px) { /* may need to fix*/
+@media (max-width: 1080px) { 
   .footer {
     position: relative;
 }

@@ -42,7 +42,7 @@ a:hover {
   display: block;
   position: relative;
   padding-bottom: 0px;
-  background-color: #d4fcfa;
+  background-color: #ecfff7;
 }
 
 
@@ -50,7 +50,7 @@ a:hover {
 .navbar {
   margin-bottom: 0;
   border: 0;
-  background-color: #d4fcfa !important;
+  background-color: #ecfff7 !important;
 }
 
 #navbar .navbar-nav li a, #navbar .navbar-header a{
@@ -63,7 +63,7 @@ a:hover {
 .pink-separator{
   height: 3px;
   margin-top: 5px;
-  background-color: #d4fcfa;
+  background-color: #ecfff7;
 }
 
 #navbar .navbar-nav li a:hover, #navbar .navbar-header a:hover {
@@ -77,7 +77,7 @@ a:hover {
   text-decoration: none;  
 }
 .container-fluid{
-  background-color: #d4fcfa ;
+  background-color: #ecfff7 ;
   padding-top: 10px; 
   margin-left: auto;
   margin-right: auto;
@@ -118,7 +118,7 @@ a:hover {
   margin-top: 35px;
   margin-bottom: 15px;
   border-width: 0;
-  border-top: 3px solid #d4fcfa;
+  border-top: 3px solid #ecfff7;
   width: 100%;
   text-align: center;
 }
@@ -138,7 +138,7 @@ a:hover {
 
 .flex-item {
   margin: 20px;
-  background-color: #d4fcfa;
+  background-color: #ecfff7;
   position: relative;
   width: 45%;
 }
